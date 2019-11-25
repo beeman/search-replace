@@ -1,0 +1,71 @@
+{
+  "name": "search-replace",
+  "version": "0.0.0-development",
+  "description": "A simple tool to help you search/replace throughout a codebase.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "search-replace": "dist/index.js"
+  },
+  "scripts": {
+    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "yarn link && nodemon",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeman/search-replace.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Package",
+    "Starter"
+  ],
+  "author": {
+    "name": "Bram Borggreve",
+    "email": "borggreve@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beeman/search-replace/issues"
+  },
+  "homepage": "https://github.com/beeman/search-replace#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn lint && npm test"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.12",
+    "@types/yargs": "^13.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.7.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "semantic-release": "^15.13.31",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "globby": "^10.0.1",
+    "replace-in-file": "^4.2.0",
+    "yargs": "^15.0.2"
+  }
+}
