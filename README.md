@@ -20,7 +20,7 @@ Search and replace all instances of `Foo` with `Bar` and `foo` with `bar` in the
 Install globally if you want fast access to it.
 
 ```shell script
-npm o -g search-replace
+npm i -g search-replace
 ```
 
 Search and replace all occurrences of `foo` with `bar`: 
