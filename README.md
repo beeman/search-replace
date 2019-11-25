@@ -15,8 +15,6 @@ A simple tool to help you search/replace throughout a codebase.
 
 # Usage
 
-Search and replace all instances of `Foo` with `Bar` and `foo` with `bar` in the current working dir and all subdirs.
-
 Install globally if you want fast access to it.
 
 ```shell script
