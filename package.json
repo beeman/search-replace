@@ -45,7 +45,7 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@types/jest": "24.0.23",
-    "@types/node": "12.12.12",
+    "@types/node": "12.12.17",
     "@types/yargs": "13.0.3",
     "@typescript-eslint/eslint-plugin": "2.9.0",
     "@typescript-eslint/parser": "2.9.0",
