@@ -65,7 +65,7 @@
   ],
   "dependencies": {
     "globby": "^10.0.1",
-    "replace-in-file": "^4.2.0",
+    "replace-in-file": "^5.0.0",
     "yargs": "^15.0.2"
   }
 }
